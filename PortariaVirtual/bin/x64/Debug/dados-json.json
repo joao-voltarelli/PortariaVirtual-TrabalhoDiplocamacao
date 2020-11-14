@@ -1,0 +1,8 @@
+{
+  "query": "oi",
+  "topScoringIntent": {
+    "intent": "Cumprimento",
+    "score": 0.9074953
+  },
+  "entities": []
+}

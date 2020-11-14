@@ -1,0 +1,42 @@
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.extension.kws.dll
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.extension.codec.dll
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\PortariaVirtual.exe.config
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\PortariaVirtual.exe
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\PortariaVirtual.pdb
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\obj\x64\Debug\PortariaVirtual.csprojAssemblyReference.cache
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\obj\x64\Debug\PortariaVirtual.csproj.CopyComplete
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\obj\x64\Debug\PortariaVirtual.exe
+C:\Users\joaov\Desktop\Computação\1- ProjetoLuis-TCC\PortariaVirtual\PortariaVirtual\obj\x64\Debug\PortariaVirtual.pdb
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.extension.kws.dll
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.extension.codec.dll
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\PortariaVirtual.exe.config
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\PortariaVirtual.exe
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\PortariaVirtual.pdb
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.csprojAssemblyReference.cache
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.csproj.CopyComplete
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.exe
+C:\Users\joaov\Desktop\Testes-TD\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.pdb
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.core.dll
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.extension.kws.dll
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.extension.codec.dll
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\PortariaVirtual.exe.config
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\PortariaVirtual.exe
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\PortariaVirtual.pdb
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.dll
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Microsoft.CognitiveServices.Speech.csharp.xml
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.csprojAssemblyReference.cache
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.csproj.CopyComplete
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.exe
+C:\Users\joaov\Desktop\Projeto-VersaoDinamica\PortariaVirtual-Teste\PortariaVirtual\obj\x64\Debug\PortariaVirtual.pdb

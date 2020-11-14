@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<regras>
+
+    <estado_0>
+        <case_cumprimento>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "HorárioDia"</regra_se>
+                <frase>Olá, tudo bem? Como posso te ajudar?</frase>
+                <prox_estado>1</prox_estado>
+            </se>
+            <frase>{0}, tudo bom? No que posso te ajudar hoje?</frase>
+            <prox_estado>1</prox_estado>
+        </case_cumprimento>
+        <case_entrega>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>"Olá, tudo bem? Por favor, diga o nome ou o número do apartamento do morador onde você quer entregar</frase>
+                <prox_estado>7</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Olá, tudo bem?. Ok, irei ligar para o apartamento do {0} para avisá-lo da entrega. Aguarde um instante</frase_se>
+                <prox_estado_se>2</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Olá, tudo bem?. Ok, irei avisar o morador do apartamento {0} que há uma entrega para ele. Aguarde um instante</frase_senao>
+                <prox_estado_senao>2</prox_estado_senao>
+            </senao>
+        </case_entrega>
+        <case_visita>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Olá, tudo bem?. Por favor, diga o nome ou o número do apartamento do morador que você está visitando</frase>
+                <prox_estado>10</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Olá, tudo bem?. Ok, irei ligar para o apartamento do {0} para avisá-lo da sua visita. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>9</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Olá, tudo bem?. Ok, irei avisar o morador do apartamento {0} que há uma visita para ele. Por favor, diga o seu nome</frase_senao>
+                <prox_estado_senao>9</prox_estado_senao>
+            </senao>
+        </case_visita>
+        <case_chegada>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase>Olá, tudo bem?. Ok, irei avisar o {0} que você chegou. Por favor, diga o seu nome</frase>
+                <prox_estado>8</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NumApartamento"</regra_se>
+                <frase_se>Olá, tudo bem?. Ok, irei avisar o morador do apartamento {0} que você já está aqui. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>8</prox_estado_se>
+                <regra_senao>-1</regra_senao>
+                <frase_senao>-1</frase_senao>
+                <prox_estado_senao>-1</prox_estado_senao>
+            </senao>
+        </case_chegada>
+        <case_default>
+            <frase>Desculpe, não consegui entender o que você falou</frase>
+            <prox_estado>0</prox_estado>
+        </case_default>
+    </estado_0>
+
+    <estado_1>
+        <case_cumprimento>
+            <frase>Olá. O que deseja?</frase>
+            <prox_estado>5</prox_estado>
+        </case_cumprimento>
+        <case_entrega>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Por favor, diga o nome ou o número do apartamento do morador onde você quer entregar</frase>
+                <prox_estado>7</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Ok, irei ligar para o apartamento do {0} para avisá-lo da entrega. Aguarde um instante</frase_se>
+                <prox_estado_se>2</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Ok, irei avisar o morador do apartamento {0} que há uma entrega para ele. Aguarde um instante</frase_senao>
+                <prox_estado_senao>2</prox_estado_senao>
+            </senao>
+        </case_entrega>
+        <case_visita>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Por favor, diga o nome ou o número do apartamento do morador que você está visitando</frase>
+                <prox_estado>10</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Ok, irei ligar para o apartamento do {0} para avisá-lo da sua visita. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>9</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Ok, irei avisar o morador do apartamento {0} que há uma visita para ele. Por favor, diga o seu nome</frase_senao>
+                <prox_estado_senao>9</prox_estado_senao>
+            </senao>
+        </case_visita>
+        <case_chegada>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase>Ok, irei avisar o {0} que você chegou. Por favor, diga o seu nome</frase>
+                <prox_estado>8</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NumApartamento"</regra_se>
+                <frase_se>Ok, irei avisar o morador do apartamento {0} que você já está aqui. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>8</prox_estado_se>
+                <regra_senao>-1</regra_senao>
+                <frase_senao>-1</frase_senao>
+                <prox_estado_senao>-1</prox_estado_senao>
+            </senao>
+        </case_chegada>
+        <case_despedida>
+            <prox_estado>6</prox_estado>
+        </case_despedida>
+        <case_default>
+            <frase>Desculpe, não entendi</frase>
+            <prox_estado>1</prox_estado>
+        </case_default>
+    </estado_1>
+
+    <estado_5>
+        <case_cumprimento>
+            <frase>Desculpe, não estou entendendo a sua solicitação. Terei que encerrar a ligação.</frase>
+            <prox_estado>6</prox_estado>
+        </case_cumprimento>
+        <case_entrega>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Por favor, diga o nome ou o número do apartamento do morador onde você quer entregar</frase>
+                <prox_estado>7</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Ok, irei ligar para o apartamento do {0} para avisá-lo da entrega. Aguarde um instante</frase_se>
+                <prox_estado_se>2</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Ok, irei avisar o morador do apartamento {0} que há uma entrega para ele. Aguarde um instante</frase_senao>
+                <prox_estado_senao>2</prox_estado_senao>
+            </senao>
+        </case_entrega>
+        <case_visita>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Por favor, diga o nome ou o número do apartamento do morador que você está visitando</frase>
+                <prox_estado>10</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Ok, irei ligar para o apartamento do {0} para avisá-lo da sua visita. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>9</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Ok, irei avisar o morador do apartamento {0} que há uma visita para ele. Por favor, diga o seu nome</frase_senao>
+                <prox_estado_senao>9</prox_estado_senao>
+            </senao>
+        </case_visita>
+        <case_chegada>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase>Ok, irei avisar o {0} que você chegou. Por favor, diga o seu nome</frase>
+                <prox_estado>8</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NumApartamento"</regra_se>
+                <frase_se>Ok, irei avisar o morador do apartamento {0} que você já está aqui. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>8</prox_estado_se>
+                <regra_senao>-1</regra_senao>
+                <frase_senao>-1</frase_senao>
+                <prox_estado_senao>-1</prox_estado_senao>
+            </senao>
+        </case_chegada>
+        <case_despedida>
+            <prox_estado>6</prox_estado>
+        </case_despedida>
+        <case_default>
+            <frase>Desculpe, não entendi</frase>
+            <prox_estado>5</prox_estado>
+        </case_default>
+    </estado_5>
+
+    <estado_7>
+        <case_destino>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Por favor, informe para quem é a entrega</frase>
+                <prox_estado>7</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Ok, irei ligar para o apartamento do {0} para avisá-lo da entrega. Aguarde um instante</frase_se>
+                <prox_estado_se>2</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Ok, irei avisar o morador do apartamento {0} que há uma entrega para ele. Aguarde um instante</frase_senao>
+                <prox_estado_senao>2</prox_estado_senao>
+            </senao>
+        </case_destino>
+        <case_solicitacao>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase>Ok, irei ligar para o apartamento do {0} para avisá-lo da entrega. Aguarde um instante</frase>
+                <prox_estado>2</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NumApartamento"</regra_se>
+                <frase_se>Ok, irei avisar o morador do apartamento {0} que há uma entrega para ele. Aguarde um instante</frase_se>
+                <prox_estado_se>2</prox_estado_se>
+                <regra_senao>-1</regra_senao>
+                <frase_senao>-1</frase_senao>
+                <prox_estado_senao>-1</prox_estado_senao>
+            </senao>
+        </case_solicitacao>
+        <case_default>
+            <frase>Desculpe, não entendi. Por favor, poderia informar para quem é a entrega?</frase>
+            <prox_estado>7</prox_estado>
+        </case_default>
+    </estado_7>
+
+    <estado_8>
+        <se>
+            <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+            <frase>Ok, irei avisar o morador que você chegou e está esperando por ele. Aguarde um instante</frase>
+            <prox_estado>4</prox_estado>
+        </se>
+        <frase>Poderia dizer seu nome novamente?</frase>
+        <prox_estado>8</prox_estado>
+    </estado_8>
+
+    <estado_9>
+        <se>
+            <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+            <frase>Ok, irei avisar o morador da sua solicitação de visita. Aguarde um instante</frase>
+            <prox_estado>3</prox_estado>
+        </se>
+        <frase>Poderia dizer seu nome novamente?</frase>
+        <prox_estado>9</prox_estado>
+    </estado_9  >
+
+    <estado_10>
+        <case_destino>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida != "NomePessoa" and @tipoEntidadeReconhecida != "NumApartamento"</regra_se>
+                <frase>Por favor, informe para quem é a visita</frase>
+                <prox_estado>10</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase_se>Ok, irei ligar para o apartamento do {0} para avisá-lo da sua visita. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>9</prox_estado_se>
+                <regra_senao>@tipoEntidadeReconhecida = "NumApartamento"</regra_senao>
+                <frase_senao>Ok, irei avisar o morador do apartamento {0} que há uma visita para ele. Por favor, diga o seu nome</frase_senao>
+                <prox_estado_senao>9</prox_estado_senao>
+            </senao>
+        </case_destino>
+        <case_solicitacao>
+            <se>
+                <regra_se>@tipoEntidadeReconhecida = "NomePessoa"</regra_se>
+                <frase>Ok, irei ligar para o apartamento do {0} para avisá-lo da sua visita. Por favor, diga o seu nome</frase>
+                <prox_estado>9</prox_estado>
+            </se>
+            <senao>
+                <regra_se>@tipoEntidadeReconhecida = "NumApartamento"</regra_se>
+                <frase_se>Ok, irei avisar o morador do apartamento {0} que há uma visita para ele. Por favor, diga o seu nome</frase_se>
+                <prox_estado_se>9</prox_estado_se>
+                <regra_senao>-1</regra_senao>
+                <frase_senao>-1</frase_senao>
+                <prox_estado_senao>-1</prox_estado_senao>
+            </senao>
+        </case_solicitacao>
+        <case_default>
+            <frase>Desculpe, não entendi. Por favor, poderia informar para quem é a visita?</frase>
+            <prox_estado>10</prox_estado>
+        </case_default>
+    </estado_10>
+
+</regras>
